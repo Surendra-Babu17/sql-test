@@ -1,0 +1,5 @@
+1.Display all student details?
+ans: select * from student_table;
+
+2.show the names and marks of students from CSE department.
+ans: select name and marks from student where department = "CSE";
