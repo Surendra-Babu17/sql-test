@@ -1,5 +1,40 @@
+                                      SQL TEST ANSWERS
+
+
 1.Display all student details?
 ans: select * from student_table;
 
 2.show the names and marks of students from CSE department.
 ans: select name and marks from student where department = "CSE";
+
+3.Find all students whose age is greater than 21
+ans: select * from students where age>21; 
+
+4.list distinct departments 
+ans: select distinct departments from students;
+
+5.Count the number of students from Hyderbad 
+ans: selct count(*) as student_count_in_Hyderbad from students where city="hyderbad"; 
+
+6.find students whose scored more than 80 marks.
+ans: select * from students where marks>80;
+
+7.Retrive students whose name starts with 'A'
+ans: select * from students where name like'A%'; 
+
+
+8.Find the average marks of the students in each department. 
+ans:select department,avg(marks) from students groupby department; 
+
+9.Dispaly the Top 3 Students Based on Marks.
+Ans: select name,marks from students where odered by marks DESClimit 3;
+
+10.Show students who are from chennai or bangalore. 
+ans: select * from students where city="chennai,bangalore";
+
+11.Find the Department with the highest average marks 
+ans: slect departments avg(marks) as max_avg_marks_department  
+
+
+
+
